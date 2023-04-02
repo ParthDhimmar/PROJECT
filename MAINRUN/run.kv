@@ -1,0 +1,23 @@
+<mode>:
+    canvas:
+        Rectangle :
+            pos: self.pos
+            size: self.size
+            source: 'images\bg.jpg'
+    BoxLayout:
+        orientation: 'horizontal'
+        
+        Button
+            text: 'GALAXY'
+            on_press: root.galaxy(self)
+            # background_normal: 'image\galaxy.jpg'
+        Button:
+            text: 'SNAKES'
+            on_press: root.snakes(self)
+            # background_normal: 'image\snakes.jpg'
+        Button:
+            text: 'PING PONG'
+            on_press : root.pingpong(self)
+            # background_normal: 'image\pingpong.png'
+
+ 
